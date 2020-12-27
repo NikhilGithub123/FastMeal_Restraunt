@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lato';
+    color: black;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(img/hero.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.head1{
+    color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1140px;
+}
+section{
+    padding: 80px;
+}
+h1,h2{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+h2{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background: #cf6d17;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.para,.para1{
+    line-height: 1.6;
+}
+.para{
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+h3{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 110%;
+}
+.box{
+    padding: 1%;
+}
+.btn:link,.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn1:link,.btn1:visited,input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    border-radius: 200px;
+    text-decoration: none;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-first:link,.btn-first:visited{
+    background-color: #FFA500;
+    margin-right: 15px;
+}
+.btn-second:link,.btn-second:visited{
+   /* background-color: aliceblue;*/
+    border: 2px solid #FFA500;
+}
+.btn:hover{
+    background-color: #cf6d17;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.image{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    height: 100px;
+    float: left;
+}
+
+.image-black{
+    display: none;
+    margin: 5px 0;
+    width: auto;
+    height: 50px;
+    float: left;
+}
+
+.sticky .image{display: none;}
+.sticky .image-black{ display: block;}
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 2%; 
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cf6d17;
+}
+.meals{
+    list-style: none;
+    width: 100%;
+}
+.sec-meals{
+        padding: 0;
+}
+.meals li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meals-img{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+.meals-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    opacity: 0.7;
+}
+
+.meals-img img:hover{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.step-box{
+    margin-top: 30px;
+}
+.step-box:first-child{
+    padding-right: 3%; 
+    text-align: right;
+}
+.step-box:last-child{
+    padding-left: 3%;
+}
+.mobile{
+    width: 40%;
+}
+.work-step{
+    margin-bottom: 50px;
+}
+.work-step div{
+    color: #cf6d17;
+    border: 2px solid #cf6d17;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    float:left;
+    padding: 3%;
+    margin-right: 25px;
+}
+.clearfix{
+    zoom:1
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sec-how{
+    background-color: #f4f4f4;
+}
+.image-city{
+    width: 100%;
+    height: 20%;
+    margin-bottom: 15px;
+}
+.customers{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)),url(img/back-customers.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+}
+blockquote:before{
+    content: "\201C";
+    display: block;
+    font-size: 400%;
+}
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+cite img{
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.package{
+    background-color: #f4f4f4;
+}
+
+.sign-up{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+.sign-up div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.package2{
+    font-size: 300%;
+    color: #FFA500;
+    margin-bottom: 10px;
+}
+.sign-up div span{
+    font-size: 30%;
+}
+.package1{
+    font-size: 70%;
+}
+.sign-up ul{
+    list-style: none;
+}
+.sign-up ul li{
+    font-size: 90%;
+    padding: 5px 0;
+}
+
+input[type=text],input[type=email],textarea,select{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+.form1{
+    margin: 0 auto;
+    width: 60%;
+}
+textarea{
+    height: 20%;
+}
+*:focus {outline:none;}
+
+.p{
+    background-color: #333;
+}
+a{
+    color:#FFA500; 
+}
+.footer-nav{
+    list-style:none;
+    float:left;
+}
+.foot{
+    list-style:none;
+    float:right;
+}
+.footer-nav li,.foot li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.foot li a:link,
+.footer-nav li a:visited,
+.foot li a:visited{
+    text-decoration: none;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.foot li a:hover,
+.footer-nav li a:active,
+.foot li a:active
+{
+    color: #ddd;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 247, 247);  
+    box-shadow: 0 2px 2px #dedede;
+    z-index: 9999;
+}
+.sticky .main-nav{
+    margin-top: 15px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    color: black;
+    text-decoration: none;
+    padding: 8px 0;
+    font-size: 80%;
+    transition: border-bottom 0.2s;
+/*    margin-top: 10px;*/
+}
